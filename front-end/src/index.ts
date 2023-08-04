@@ -1,12 +1,10 @@
-// import "alpinejs";
-// import create from'./create';
+import "alpinejs";
+import create from "./create";
 
-// declare global {
-//     interface Window {
-//         create: any;
-//     }
-// }
+declare global {
+    interface Window {
+        create: any;
+    }
+}
 
-// window.create = create;
-
-import './create';
+window.create = create;

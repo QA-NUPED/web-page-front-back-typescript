@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/alpinejs": "^3.7.2",
     "@types/axios": "^0.14.0",
-    "alpinejs": "^3.12.3",
+    "alpinejs": "^2.8.2",
     "axios": "^1.4.0",
     "cross-env": "^7.0.3",
     "live-server": "^1.2.2",

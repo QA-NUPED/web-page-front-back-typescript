@@ -1,3 +1,12 @@
-import {name} from './creat';
+// import "alpinejs";
+// import create from'./create';
 
-console.log(name)
+// declare global {
+//     interface Window {
+//         create: any;
+//     }
+// }
+
+// window.create = create;
+
+import './create';

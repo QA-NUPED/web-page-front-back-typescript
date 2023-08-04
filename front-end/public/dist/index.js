@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/creat.ts":
-/*!**********************!*\
-  !*** ./src/creat.ts ***!
-  \**********************/
-/***/ ((__unused_webpack_module, exports) => {
+/***/ "./src/create.ts":
+/*!***********************!*\
+  !*** ./src/create.ts ***!
+  \***********************/
+/***/ (function() {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.name = void 0;\nexports.name = 'Gleidison';\n\n\n//# sourceURL=webpack://front-end/./src/creat.ts?");
+eval("\n// import http from \"./helpers/http\";\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {\n    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }\n    return new (P || (P = Promise))(function (resolve, reject) {\n        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }\n        function rejected(value) { try { step(generator[\"throw\"](value)); } catch (e) { reject(e); } }\n        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }\n        step((generator = generator.apply(thisArg, _arguments || [])).next());\n    });\n};\n// function create() {\n//     return {\n//         create: async function() {\n//             try{\n//                 const {data} = await http.post('/user/create');\n//                 console.log(data);\n//             }catch(error){\n//                 console.log(error);\n//             }\n//         }\n//     }\n// }\n// export default create;\nfunction create() {\n    return {\n        create: function () {\n            return __awaiter(this, void 0, void 0, function* () {\n                try {\n                    console.log('chamou');\n                    // const {data} = await http.post('/user/create');\n                    // console.log(data);\n                }\n                catch (error) {\n                    console.log(error);\n                }\n            });\n        }\n    };\n}\n\n\n//# sourceURL=webpack://front-end/./src/create.ts?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
   \**********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst creat_1 = __webpack_require__(/*! ./creat */ \"./src/creat.ts\");\nconsole.log(creat_1.name);\n\n\n//# sourceURL=webpack://front-end/./src/index.ts?");
+eval("\n// import \"alpinejs\";\n// import create from'./create';\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\n// declare global {\n//     interface Window {\n//         create: any;\n//     }\n// }\n// window.create = create;\n__webpack_require__(/*! ./create */ \"./src/create.ts\");\n\n\n//# sourceURL=webpack://front-end/./src/index.ts?");
 
 /***/ })
 
@@ -50,7 +50,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\ncons
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;

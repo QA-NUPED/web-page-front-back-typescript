@@ -1,6 +1,7 @@
 import http from "./helpers/http";
+import { userCreateIterface } from "../interfaces/userCreateInterfaces";
 
-function create() {
+function create(): userCreateIterface {
     return {
         user: {
             firstName:'Nome',

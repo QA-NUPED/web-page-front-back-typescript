@@ -1,5 +1,6 @@
 import http from "./helpers/http";
 import { userCreateIterface } from "../interfaces/userCreateInterfaces";
+import { errorValidateInterface } from "../interfaces/errorValidateInterface";
 
 function create(): userCreateIterface {
     return {
@@ -16,7 +17,7 @@ function create(): userCreateIterface {
             } catch (error: any) {
                 const errors = error.response?.data?.errors;
                 if (errors) {
-                    errors.forEach((element: any) => {
+                    errors.forEach((element: errorValidateInterface) => {
                         const elementValidation = document.querySelector(
                             `#error-${element.path}`
                         ) as HTMLSpanElement;

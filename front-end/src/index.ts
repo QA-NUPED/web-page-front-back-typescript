@@ -1,3 +1,11 @@
-import {name} from './creat';
+import "alpinejs";
+import create from "./create";
+import { userCreateIterface } from "../interfaces/userCreateInterfaces";
 
-console.log(name)
+declare global {
+    interface Window {
+        create: () => userCreateIterface;
+    }
+}
+
+window.create = create;

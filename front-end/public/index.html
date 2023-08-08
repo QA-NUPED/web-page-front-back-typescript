@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB page Front & Back</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
+
 <body>
-    <h1>Wellcome to Page</h1>
+    <div id="container">
+        <h2 id="title">WEB site Front & Back</h2>
+            
+        <div x-data="create()">
+            <form x-on:submit.prevent="createUser">
+                <input type="text" name="firstNAme" x-model="user.firstName">
+                <span id="error-firstName"></span>
+                <input type="text" name="lastName" x-model="user.lastName">
+                <span id="error-lastName"></span>
+                <input type="text" name="email" x-model="user.email">
+                <span id="error-email"></span>
+                <input type="text" name="password" x-model="user.password">
+                <span id="error-password"></span>
+                <button type="submit">Create</button>
+            </form>
+        </div>
+
+    </div>
     <script src="dist/index.js"></script>
+
+
 </body>
+
 </html>
